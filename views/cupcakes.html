@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Yining He">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="../static/script.js"></script>
+    <link rel="stylesheet" href="../static/style.css">
+    <!-- link to font awesome to access icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- jquery library  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <title> Say it With Sweets</title>
+</head>
+<body>
+    <!-- header -->
+    <div class="heading">
+        <h1>Cupcakes</h1>
+    </div>
+    <!-- navigation bar -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="cupcakes.html">Cupcakes</a>
+        <a href="cakes.html">Cakes</a>
+        <a href="cookies.html">Cookies</a>
+        <a href="contact us.html">Contact Us</a>
+    </div>
+    <!-- two columns side by side -->
+    <section> 
+        <nav>
+            <h2>Hours of Operation</h2>
+            <ul>
+                <li>Monday: 8am - 5pm</li>
+                <li>Tuesday: 8am - 5pm</li>
+                <li>Wednesday: 8am - 5pm</li>
+                <li>Thursday: 8am - 5pm</li>
+                <li>Friday: 8am - 5pm</li>
+                <li>Saturday: 8am - 3pm</li>
+                <li>Sunday: 8am - 3pm</li>
+            </ul>
+            <h2>Store Info</h2>
+            <ul>
+                <li>Address: 1307 Pleasant Valley Blvd. Altoona PA 16602 US</li>
+                <li>Phone number: 814-937-1564</li>
+            </ul>
+        
+        </nav>
+        <!-- column on the right -->
+        <article>
+            <!-- carousel w3schools reference-->
+            <div class="carousel"> 
+                <div class="mySlides">
+                    <div class="numberText"> 1 / 4 </div>
+                    <img class="cupcakeimg" src="../static/cupcake pics/blue and white.jpeg" style="width: 100%">
+                    <div class="caption">Blue and white cupcakes</div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="numberText"> 2 / 4 </div>
+                    <img class="cupcakeimg" src="../static/cupcake pics/celebration cupcakes.jpeg" style="width: 100%">
+                    <div class="caption">Celebration Cupcakes</div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="numberText"> 3 / 4 </div>
+                    <img class="cupcakeimg" src="../static/cupcake pics/cupcake bouquet.jpeg" style="width: 100%">
+                    <div class="caption">Cupcake Bouquets</div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="numberText"> 4 / 4 </div>
+                    <img class="cupcakeimg" src="../static/cupcake pics/graduation cupcakes.jpeg" style="width: 100%">
+                    <div class="caption">Graduation cupcakes</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+            <!-- cupcake text -->
+            <div class="carousel">
+                <h2>Cupcakes!</h2>
+                    <strong id="info"> We have many different options..just pick what you like! Or
+                        ...you can customize your own! Just give us a call and we got you. Standard cupcakes 
+                        are $2 each and includes sprinkles if desired.
+                    </strong>
+            </div>
+
+            <br><br><br><br><br><br>
+            <!-- cute line breaker -->
+            <img class="linebreak" src="../static/index page-cute line.jpeg" alt="line break" width="300px">
+
+            <!------------------------ accordian using jquery library, referencing WebStylePress -------------------->  
+            <div class="container">
+                <h2 class="seperator">Browse below for our cupcake options!</h2>
+                <div class="accordion">
+                    <div class="block">
+                        <!-- cupcake bouquets  -->
+                        <h4 class="trigger">Cupcake Bouquets</h4>
+                        <div class="content">
+                            <p>Cupcake bouquests are a truly unique gift for any occasion. Each box is filled with 9 beautifully decorated
+                                flower cupcakes and topped with a decorative bow. Vanilla and chocolate. Prices are usually 
+                                $32.00. Please order at least 4 days in advance! </p>
+                            <div class="row">
+                                <img class="column" src="../static/cupcake pics/cupcake bouquet 1.jpeg" alt="green cupcake bouquet">
+                                <img class="column" src="../static/cupcake pics/cupcake bouquet 2.jpeg" alt="purple cupcake bouquet">
+                                <img class="column" src="../static/cupcake pics/caupcake bouquet 3.jpeg" alt="pink cupcake bouquet">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- blue and white cupcakes -->
+                    <div class="block">
+                        <h4 class="trigger">Blue and White</h4>
+                        <div class="content">
+                            <p>Blue and white cupcakes: $26 per dozen</p>
+                            <p>Paw pring cupcakes: $27 per dozen</p>
+                            <div class="row">
+                                <img class="column" src="../static/cupcake pics/blue and white 1.jpeg" alt="blue and white cupcakes">
+                                <img class="column" src="../static/cupcake pics/blue and white 2.jpeg" alt="paw pring cupcakes">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- celebration cupcakes -->
+                    <div class="block">
+                        <h4 class="trigger">Celebration Cupcakes</h4>
+                        <div class="content">
+                            <p>We do all different kinds of decorations depending on your desired theme!
+                                Butter cream swirls, sprinkles, or glitter are $2 extra, but pricing mostly 
+                                depends on size and design. Contact us for more information!
+                            </p>
+                            <div class="row">
+                                <img class="column" src="../static/cupcake pics/celebration cupcake 1.jpeg" alt="unicorns">
+                                <img class="column" src="../static/cupcake pics/celebration cupcake 2.jpeg" alt="mickey mouse">
+                                <img class="column" src="../static/cupcake pics/celebration cupcake 3.jpeg" alt="aqua colors">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- cupcake cakes -->
+                    <div class="block">
+                        <h4 class="trigger">Cupcake Cakes</h4>
+                        <div class="content">
+                            <p>Our cupcake cakes are priced according to the number of cupcakes needed 
+                                for the design. Please order 4-7 days in advance! 
+                            </p>
+                            <div class="row">
+                                <img class="column" src="../static/cupcake pics/cupcake creation 1.jpeg" alt="dog">
+                                <img class="column" src="../static/cupcake pics/cupcake creation 2.jpeg" alt="flamingo">
+                                <img class="column" src="../static/cupcake pics/cupcake creation 3.jpeg" alt="firetruck">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Halloween and Fall -->
+                    <div class="block">
+                        <h4 class="trigger">Halloween and Fall</h4>
+                        <div class="content">
+                            <p>Our cupcake cakes are priced according to the number of cupcakes needed 
+                                for the design. Please order 4-7 days in advance! 
+                            </p>
+                            <div class="row">
+                                <img class="column" src="../static/cupcake pics/halloween & fall 1.jpeg" alt="halloween flowers">
+                                <img class="column" src="../static/cupcake pics/halloween & fall 2 jpeg.jpeg" alt="pumpkin">
+                                <img class="column" src="../static/cupcake pics/halloween & fall 3.jpeg" alt="sunflowers">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- footer  -->
+        <footer class="footer">
+            <p>Say it With Sweets &copy;2024</p>
+        </footer>
+        </article>
+    </section>
+</body>
+</html>

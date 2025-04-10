@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head<meta charset="UTF-8">
+    <meta name="author" content="Yining He">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="../static/script.js"></script>
+    <link rel="stylesheet" href="../static/style.css">
+    <!-- link to font awesome to access icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- jquery library  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <title> Say it With Sweets</title>
+</head>
+<body>
+    <!-- header -->
+    <div class="heading">
+        <h1>Contact Us</h1>
+    </div>
+    <!-- navigation bar -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="cupcakes.html">Cupcakes</a>
+        <a href="cakes.html">Cakes</a>
+        <a href="cookies.html">Cookies</a>
+        <a href="contact us.html">Contact Us</a>
+    </div>
+    <!-- two columns side by side -->
+    <section> 
+        <!-- column on the left -->
+        <nav>
+            <h2>Hours of Operation</h2>
+            <ul>
+                <li>Monday: 8am - 5pm</li>
+                <li>Tuesday: 8am - 5pm</li>
+                <li>Wednesday: 8am - 5pm</li>
+                <li>Thursday: 8am - 5pm</li>
+                <li>Friday: 8am - 5pm</li>
+                <li>Saturday: 8am - 3pm</li>
+                <li>Sunday: 8am - 3pm</li>
+            </ul>
+            <h2>Store Info</h2>
+            <ul>
+                <li>Address: 1307 Pleasant Valley Blvd. Altoona PA 16602 US</li>
+                <li>Phone number: 814-937-1564</li>
+            </ul>
+        
+        </nav>
+        <!-- column on the right -->
+        <article>
+            <fieldset>
+                <form action="mailto: info@sayitwithsweets.com">
+                    <!-- input name -->
+                    <label for="UserName">Your name (required):</label>
+                    <input type="text" name="userEmail" id="userEmail" required/>
+                    <!-- input email -->
+                    <label for="UserEmail">Your Email (required):</label>
+                    <input type="email" name="UserEmail" id="UserEmail" required/>
+                    <!-- input phone number -->
+                    <label for="UserPhone">Your phone number (required):</label>
+                    <input type="text" name="UserPhone" id="UserPhone" required/>
+                    <!-- input zip code  -->
+                    <label for="ZipCode">Your Zip Code (required):</label>
+                    <input type="text" name="ZipCode" id="ZipCode" required/>
+                    <!-- input comment  -->
+                    <label for="comment">Your Comments (required):</label>
+                    <textarea type="text" name="comment" id="comment"cols="30" rows="10" required></textarea>
+                    <!-- subscribe to weekly mail -->
+                    <label for="choice">Please indicate if you would like to subscribe to Say it With Sweets weekly mail:</label>
+                    <input type="checkbox" id="choice" name="choice" value="Yes">
+                    <label for="choice">Yes, sign me up!</label>
+                    <!-- submit button -->
+                    <input type="submit" value="send" onclick="validate()">
+                    <!-- <button type="submit" class="submitBTN" value="Send">Submit</button> -->
+                </form>
+                <p id="ValidateMsg"></p>
+            </fieldset>
+            <!-- footer  -->
+            <footer class="footer">
+                <p>Say it With Sweets &copy;2024</p>
+            </footer>
+        </article>
+    </section>
+</body>
+</html>

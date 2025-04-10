@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Yining He">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="../static/script.js"></script>
+    <link rel="stylesheet" href="../static/style.css">
+    <!-- link to font awesome to access icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- jquery library  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <title> Say it With Sweets</title>
+</head>
+<body>
+    <!-- header -->
+    <div class="heading">
+        <h1>Cakes</h1>
+    </div>
+    <!-- navigation bar -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="cupcakes.html">Cupcakes</a>
+        <a href="cakes.html">Cakes</a>
+        <a href="cookies.html">Cookies</a>
+        <a href="contact us.html">Contact Us</a>
+    </div>
+    <!-- two columns side by side -->
+    <section> 
+        <nav>
+            <h2>Hours of Operation</h2>
+            <ul>
+                <li>Monday: 8am - 5pm</li>
+                <li>Tuesday: 8am - 5pm</li>
+                <li>Wednesday: 8am - 5pm</li>
+                <li>Thursday: 8am - 5pm</li>
+                <li>Friday: 8am - 5pm</li>
+                <li>Saturday: 8am - 3pm</li>
+                <li>Sunday: 8am - 3pm</li>
+            </ul>
+            <h2>Store Info</h2>
+            <ul>
+                <li>Address: 1307 Pleasant Valley Blvd. Altoona PA 16602 US</li>
+                <li>Phone number: 814-937-1564</li>
+            </ul>
+        </nav>
+        <!-- column on the right -->
+        <article>
+            <h3 class="custom">We do Custom Cakes!</h3>
+            <strong id="info">Our custom made cakes are order only. We suggest that you order as early as possible
+                for your event as we only schedule a limited number of cakes each week. This is because 
+                of the time it takes to create a cake for our customers. Cakes are booked according 
+                to our schedule. PLEASE NOTE: our cakes and icing are made fresh with quality ingredients and beautifully 
+                decorated by hand. We put 3 layers of filling in each tier of our round and square 
+                cakes, so our cakes are bigger than the grocery stores and therefore cost 
+                more. One layer sheet cakes are not filled, two layer sheets are filled between the layers. 
+
+                Basic cake flavors: vanilla, chocolate, almond, strawberry, banana, red velvet. Other flavors are available
+                upon request. An additional charge may apply.
+            </strong>
+            <!------- carousel  --------->
+            <div class="carousel"> 
+                <!-- anniversary cakes -->
+                <div class="mySlides">
+                    <div class="numberText"> 1 / 7 </div>
+                    <img class="cupcakeimg" src="../static/cake pics//anniversary cake.jpeg" style="width: 100%">
+                    <div class="caption">Anniversary Cakes</div>
+                </div>
+                <!-- baby shower cakes  -->
+                <div class="mySlides">
+                    <div class="numberText"> 2 / 7 </div>
+                    <img class="cupcakeimg" src="../static/cake pics/baby shower cake.jpeg" style="width: 100%">
+                    <div class="caption">Baby shower cakes</div>
+                </div>
+                <!-- baptism cakes  -->
+                <div class="mySlides">
+                    <div class="numberText"> 3 / 7 </div>
+                    <img class="cupcakeimg" src="../static/cake pics/baptism cakes.jpeg" style="width: 100%">
+                    <div class="caption">Baptism Cakes</div>
+                </div>
+                <!-- graduation cakes  -->
+                <div class="mySlides">
+                    <div class="numberText"> 4 / 7 </div>
+                    <img class="cupcakeimg" src="../static/cake pics/graduation cakes.jpeg" style="width: 100%">
+                    <div class="caption">Graduation Cakes</div>
+                </div>
+                <!-- kids' cakes  -->
+                <div class="mySlides">
+                    <div class="numberText"> 5 / 7 </div>
+                    <img class="cupcakeimg" src="../static/cake pics/kids' cakes.jpeg" style="width: 100%">
+                    <div class="caption">Kids' Cakes</div>
+                </div>
+                <!-- ladies' cakes  -->
+                <div class="mySlides">
+                    <div class="numberText"> 6 / 7 </div>
+                    <img class="cupcakeimg" src="../static/cake pics/ladies' cakes.jpeg" style="width: 100%">
+                    <div class="caption">Ladies' Cakes</div>
+                </div>
+                <!-- mens' cakes  -->
+                <div class="mySlides">
+                    <div class="numberText"> 7 / 7 </div>
+                    <img class="cupcakeimg" src="../static/cake pics/mens' cakes.jpeg" style="width: 100%">
+                    <div class="caption">Mens' Cakes</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+            <!-- footer  -->
+            <footer class="footer">
+                <p>Say it With Sweets &copy;2024</p>
+            </footer>
+        </article>
+    </section>
+</body>
+</html>

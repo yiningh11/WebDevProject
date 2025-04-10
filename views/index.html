@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Yining He">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="../static/script.js"></script>
+    <link rel="stylesheet" href="../static/style.css">
+    <!-- link to font awesome to access icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- jquery library  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <title> Say it With Sweets</title>
+</head>
+<body>
+    <!-- header -->
+    <div class="heading">
+        <h1>Say it With Sweets</h1>
+    </div>
+    <!-- navigation bar -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="cupcakes.html">Cupcakes</a>
+        <a href="cakes.html">Cakes</a>
+        <a href="cookies.html">Cookies</a>
+        <a href="contact us.html">Contact Us</a>
+    </div>
+    <!-- two columns side by side -->
+    <section> 
+        <nav>
+            <h2>Hours of Operation</h2>
+            <ul>
+                <li>Monday: 8am - 5pm</li>
+                <li>Tuesday: 8am - 5pm</li>
+                <li>Wednesday: 8am - 5pm</li>
+                <li>Thursday: 8am - 5pm</li>
+                <li>Friday: 8am - 5pm</li>
+                <li>Saturday: 8am - 3pm</li>
+                <li>Sunday: 8am - 3pm</li>
+            </ul>
+            <h2>Store Info</h2>
+            <ul>
+                <li>Address: 1307 Pleasant Valley Blvd. Altoona PA 16602 US</li>
+                <li>Phone number: 814-937-1564</li>
+            </ul>
+            <!-- links to the store's social media platforms  -->
+            <a href="https://www.facebook.com/say.it.with.sweets/" target="_blank"><img src="../static/facebook.jpg" alt="Facebook Icon" width="60px"></a>
+            <a href="https://www.instagram.com/sayitwithsweets11/" target="_blank"><img src="../static/insta.png" alt="Insta Icon" width="80px"></a>
+
+            <!-- links to external webpages  -->
+            <div>
+                <h2>Reviews</h2>
+                <ul>
+                    <li>Birdeye: <a style="font-weight: bold;" href="https://reviews.birdeye.com/say-it-with-sweets-149159930679519" 
+                        target="_blank">www.birdeye.com</a></li>
+                    <li>Yelp: <a style="font-weight: bold;" href="https://www.yelp.com/biz/say-it-with-sweets-altoona"
+                        target="_blank">www.yelp.com</a></li>
+                    <li>Google reviews: <a style="font-weight: bold;" href="https://www.google.com/maps/place/Say+It+With+Sweets/@40.5057769,-78.3917797,17z/data=!4m6!3m5!1s0x89cb918855bb7c8b:0x7d6079aaf48c3657!8m2!3d40.505777!4d-78.3869088!16s%2Fg%2F1tj2czpf?entry=ttu"
+                        target="_blank">www.googlereviews.com</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- column on the right -->
+        <article>
+            <h2>About</h2>
+                <!-- info text and image -->
+                <strong class="contentProportion" id="info">Let us help make your next event special by creating your own custom cakes,
+                    cupcakes, or coookies to match your theme! We also offer our famous gourmet cupcakes for any occasion or just because you want some.. 
+                    Be sure to browse our website for gifts such as cookie bouquets, chocolate-covered treats or cookie 
+                    trays, certain to delight anyone. Please order early to make sure you don't miss out on any of 
+                    our "sweet" creations.
+                </strong>
+                <img class="contentProportion" id="flowers" src="../static/logo.png" alt="index page flowers" width="150px">
+                
+            <!-- cute line breaker -->
+            <br><br><br>
+            <img class="linebreak" src="../static/index page-cute line.jpeg" alt="line break" width="300px">
+            
+            <!-- promotion video -->
+            <h2>Here's a quick overview of our store!</h2>
+            <div>
+                <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/HrFyMfWoTTY?si=-vEhxBcljY1lDyZH"></iframe>
+            </div>
+    
+            <!-- your current location  -->
+            <!-- referencing: https://www.w3schools.com/js/tryit.asp?filename=tryjs_api_geo_coordinates -->
+            <h1>Your current location:</h1>
+            <button onclick="getLocation()"> get location </button>
+            <p id="location"></p>
+
+            <!-- map -->
+            <h2>Our location</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3033.620191226321!2d-78.38948908833704!3d40.50578105009529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89cb9188567d3371%3A0x79740809b421e8ac!2s1307%20Pleasant%20Valley%20Blvd%2C%20Altoona%2C%20PA%2016602!5e0!3m2!1sen!2sus!4v1712057230920!5m2!1sen!2sus" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <!-- footer  -->
+            <footer class="footer">
+                <p>Say it With Sweets &copy;2024</p>
+            </footer>
+        </article>
+    </section>
+    
+</body>
+</html>

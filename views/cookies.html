@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Yining He">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="../static/script.js"></script>
+    <link rel="stylesheet" href="../static/style.css">
+    <!-- link to font awesome to access icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- jquery library  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <title> Say it With Sweets</title>
+</head>
+<body>
+    <!-- header -->
+    <div class="heading">
+        <h1>Cookies</h1>
+    </div>
+    <!-- navigation bar -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="cupcakes.html">Cupcakes</a>
+        <a href="cakes.html">Cakes</a>
+        <a href="cookies.html">Cookies</a>
+        <a href="contact us.html">Contact Us</a>
+    </div>
+    <!-- two columns side by side -->
+    <section> 
+        <nav>
+            <h2>Hours of Operation</h2>
+            <ul>
+                <li>Monday: 8am - 5pm</li>
+                <li>Tuesday: 8am - 5pm</li>
+                <li>Wednesday: 8am - 5pm</li>
+                <li>Thursday: 8am - 5pm</li>
+                <li>Friday: 8am - 5pm</li>
+                <li>Saturday: 8am - 3pm</li>
+                <li>Sunday: 8am - 3pm</li>
+            </ul>
+            <h2>Store Info</h2>
+            <ul>
+                <li>Address: 1307 Pleasant Valley Blvd. Altoona PA 16602 US</li>
+                <li>Phone number: 814-937-1564</li>
+            </ul>
+        
+        </nav>
+        <!-- column on the right -->
+        <article>
+           <!------------------------ accordian using jquery library, referencing WebStylePress -------------------->  
+           <div class="container">
+            <h2 class="seperator">Browse below for our cookie options!</h2>
+            <div class="accordion">
+                <div class="block">
+                    <!-- cupcake bouquets  -->
+                    <h4 class="trigger">Cookie Cakes</h4>
+                    <div class="content">
+                        <p>Our 12in x 1in chocolate chip cookie cakes are made fresh and are equivalent to 5 dozen cookies.
+                            Many themes are available! Cookie cakes with messages that only have border & sprinkles - $35.00. More sophisticated designs - $40 & up.
+                            Please order 5 days before pick up or delivery.</p> 
+                        <div class="row">
+                            <img class="column" src="../static/cookie pics/cookie cake 1.jpeg" alt="Love cookie cake">
+                            <img class="column" src="../static/cookie pics/cookie cake 2.jpeg" alt="18th birthday">
+                            <img class="column" src="../static/cookie pics/cookie cake 3.jpeg" alt="gender reveal">
+                        </div>
+                    </div>
+                </div>
+                <!-- blue and white cupcakes -->
+                <div class="block">
+                    <h4 class="trigger">Cookie Gift Boxes</h4>
+                    <div class="content">
+                        <p>Curate the perfect sweets gift! 3 cookes are $18, 5 are $22</p>
+                        <div class="row">
+                            <img class="column" src="../static/cookie pics/gift box 1.jpeg" alt="pink cookie box">
+                            <img class="column" src="../static/cookie pics/cookie cake 2.jpeg" alt="christmas">
+                            <img class="column" src="../static/cookie pics/gift box 3.jpeg" alt="father's day">
+                        </div>
+                    </div>
+                </div>
+                <!-- celebration cupcakes -->
+                <div class="block">
+                    <h4 class="trigger">Custom Made Cookies</h4>
+                    <div class="content">
+                        <p> Choose the perfect cookie for you and your family! Please order custom made 
+                            cookies as far in advance as possible to insure availability. Because of the decorating process, we need at least 
+                            7 working days notice for up to 6 dozen. Please call for more information about pricing!</p>
+                        <div class="row">
+                            <img class="column" src="../static/cookie pics/custom 1.jpeg" alt="spring">
+                            <img class="column" src="../static/cookie pics/custom 2.jpeg" alt="mickey and minnie mouse">
+                            <img class="column" src="../static/cookie pics/custom 3.jpeg" alt="toy story">
+                        </div>
+                    </div>
+                </div>
+                <!-- cupcake cakes -->
+                <div class="block">
+                    <h4 class="trigger">Cookie Trays</h4>
+                    <div class="content">
+                        <p>Our delivious cookie trays are perfect for parties, weddings, showers or corporate events. 
+                            Just choose which size tray suits your occasion and give us a call. Please order at least 
+                            5 working days in advance. </p>
+                            <p> Choose up to 5 kinds of cookies per tray. The tray comes with 5 decorated cookies and $1 per dozen more on trays.</p>
+                        <table>
+                            <tr><th>Small</th><th>Medium</th><th>Large</th></tr>
+                            <tr><td>5 dozen</td><td>10 dozen</td><td>12 dozen</td></tr>
+                            <tr><td>$54</td><td>$97</td><td>$112</td></tr>
+                        </table>
+                        <button id="SeeMoreBTN" onclick="showList()">Click to see all the flavors!</button>
+                        <ul id="AllFlav">
+                            <li class="flavors">almond chocolate chunk</li>
+                            <li class="flavors">chocolate chip</li>
+                            <li class="flavors">cookies & cream</li>
+                            <li class="flavors">coconut</li>
+                            <li class="flavors">cream cheese mints</li>
+                            <li class="flavors">drop sugar cookie - sugar sprinkles</li>
+                            <li class="flavors">drop sugar cookie - chocolate drizzle</li>
+                            <li class="flavors">italian easter</li>
+                            <li class="flavors">orange cream</li>
+                            <li class="flavors">peanut butter</li>
+                            <li class="flavors">peanut butter blossom</li>
+                            <li class="flavors">pumpkin chocolate chip (seasonal)</li>
+                            <li class="flavors">raspberry thumbprints</li>
+                            <li class="flavors">red velvet peanut butter blossoms</li>
+                            <li class="flavors">snickerdoodles</li>
+                            <li class="flavors">snowballs</li>
+                        </ul>
+                        <div class="row">
+                            <img class="column" src="../static/cookie pics/cookie tray 1.jpeg" alt="christmas">
+                            <img class="column" src="../static/cookie pics/cookie tray 2.jpeg" alt="sweet treats!">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer  -->
+            <footer class="footer">
+                <p>Say it With Sweets &copy;2024</p>
+            </footer>
+        </article>
+    </section>
+</body>
+</html>
